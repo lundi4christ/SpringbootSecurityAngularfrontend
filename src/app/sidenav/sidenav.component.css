@@ -1,0 +1,27 @@
+.sidenav{
+      position: absolute;
+      /*width: 60px;*/
+      height: 100vh;
+      border-right-width: 10px;
+      border-right-color: black;
+      background-color: #e6e6e6;
+}
+
+.sidenav > .icon1 {
+      /*display: inline-block;*/
+      margin-top: 45px;
+}
+
+.sidenav > .icon1 a {
+  display: block;
+  color: #0078D4;
+  padding: 15px 15px 15px 15px;
+
+}
+.sidenav > .icon1 a:hover{
+    background-color: white;
+}
+
+.active {
+    background-color: mintcream;
+}

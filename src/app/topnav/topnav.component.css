@@ -1,0 +1,50 @@
+.topnav{
+    /*height: 45px;*/
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #0078D4;
+
+}
+
+.top{
+  display: inline;
+}
+
+.topnav > .top > .logo {
+      display: inline-block;
+      padding: 10px 10px 10px 10px;
+      size: 50px;
+      color: #f3f2f1;
+}
+
+/*.topnav > .nav_link{
+    display: inline;
+    float: right;
+    line-height: 14px;
+}*/
+
+.topnav a {
+    display: inline;
+    float: right;
+    color: #f3f2f1;
+    /*background-color: burlywood;*/
+    display: block;
+    padding: 15px 15px 15px 15px;
+    line-height: 14px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+  background-color: cadetblue;
+}
+
+/*.topnav > .nav_link > ul li {
+    display: inline-block;
+}
+
+.topnav > .nav_link > ul {
+      list-style: none;
+      position: relative;
+      padding: 0px;
+}*/
