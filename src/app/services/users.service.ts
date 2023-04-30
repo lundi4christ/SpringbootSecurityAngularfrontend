@@ -12,26 +12,27 @@ export class UsersService {
   constructor(private http: HttpClient) {}
 
   getUsersDetails(): Observable<User[]>{
-    return this.http.get<User[]>('http://localhost:8090/users/allUsers')
+    return this.http.get<User[]>('/users/allUsers')
       .pipe(retry(1), catchError(this.errorHandler));
   }
 
   getUser(id: number): Observable<User> {
-    return this.http.get<User>('http://localhost:8090/users/getUser/' + id );
+    return this.http.get<User>('/users/getUser/' + id );
   }
 
   saveUser(theUser): Observable<User>{
-    return this.http.post<User>('http://localhost:8090/users/saveUsers', theUser)
+    return this.http.post<User>('/users/saveUsers', theUser)
       .pipe(retry(1), catchError(this.errorHandler));
   }
 
   updateUser(theUser): Observable<User>{
-    return this.http.put<User>('http://localhost:8090/users/updateUser', theUser)
+    return this.http.put<User>('/users/updateUser', theUser)
       .pipe(retry(1), catchError(this.errorHandler));
   }
 
+  // tslint:disable-next-line:typedef
   public deleteUser(user: User) {
-    return this.http.delete<User>('http://localhost:8090/users/deletebyid' + '/' + user.id);
+    return this.http.delete<User>('/users/deletebyid' + '/' + user.id);
   }
 
   // tslint:disable-next-line:typedef

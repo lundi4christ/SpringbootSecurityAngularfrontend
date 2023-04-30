@@ -4,6 +4,7 @@ body{
   margin:0;
   padding:0;
   font-family: 'segoe ui';
+  /*background-color: var(--bs-body-bg);*/
 
 }
 
